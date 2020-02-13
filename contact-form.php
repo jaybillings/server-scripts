@@ -20,7 +20,7 @@ $message = $json_obj['message'];
 $to = "postmaster@localhost"; // Change this on prod machine
 $subject = "Information Request from $name";
 $body = "From: $name\n E-Mail: $email\n Message:\n $message";
-$from = "From: $name";
+$from = "From: $email";
 
 try {
     mail($to, $subject, $body, $from);
