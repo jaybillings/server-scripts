@@ -17,7 +17,7 @@ $name = $json_obj['name'];
 $email = $json_obj['email'];
 $message = $json_obj['message'];
 
-$to = "postmaster@localhost"; // Change this on prod machine
+$to = "contact@cedarvine.tech"; // Change this on prod machine
 $subject = "Information Request from $name";
 $body = "From: $name\n E-Mail: $email\n Message:\n $message";
 $from = "From: $email";
